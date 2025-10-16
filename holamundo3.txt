@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-Hola mundo 3
-=======
-hola que tal
->>>>>>> 5ee3f93b7aa13a32e580fdaf1c036c1274b780ec
