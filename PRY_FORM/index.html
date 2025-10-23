@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+<body>
+
+    <header>
+        <h1>INGRESAR DATOS DEL ESTUDIANTE</h1>
+    </header>
+    <main>
+        <!--FORM-->
+        <form action="server.html" method="post">
+            <label for="nombres">Ingrese sus nombres:</label>
+            <!--TEXT-->
+            <input 
+                type="text" 
+                name="nombres" 
+                id="nombres"
+                placeholder="Ejem: Dennis"
+                autofocus
+                maxlength="6"
+                minlength="2"
+                required
+            >
+           
+            <!--TEXT-->
+        <label for="apellidos">Ingrese sus apellidos:</label>
+        <input 
+            type="text" 
+            name="apellidos" 
+            id="apellidos"
+            placeholder="Ejem: Paucar"
+            required
+        >
+      
+        <!--EMAIL-->
+        <label for="email">Ingrese el email:</label>
+        <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            placeholder="Ejm: dspaucar@gmail.com" 
+            required
+        >
+        
+        <!--Numbre-->
+            <label for="edad">Ingrese su edad:</label>
+            <input 
+                type="number" 
+                name="edad" 
+                id="edad" 
+                placeholder="Ejem 20"
+                max="50"
+                min="15"
+                value="15"
+            >
+       
+        <!--Date-->
+        <label for="fecha_nacimiento">Ingrese su fecha de nacimiento:</label>
+        <input 
+            type="date" 
+            name="fecha_nacimiento" 
+            id="fecha_nacimiento"
+            value="2025-10-21"
+            min="2025-10-10"
+            max="2025-10-30"
+        > 
+
+        <br>
+        <br>
+        <!--Radio-->
+        <label for="">Seleccione su sexo</label>
+        <br>
+        <label for="hombre">Hombre</label>
+        <input 
+            type="radio" 
+            name="sexo" 
+            id="hombre"
+            
+        >
+        <label for="mujer">Mujer</label>
+        <input 
+            type="radio" 
+            name="sexo" 
+            id="mujer"
+            value="mujer"
+            checked
+        >
+
+        <br>
+        <br>
+        <label for="">Seleccione dias de clase de programación web</label>
+        <br>
+        <!--Checkbox-->
+        <label for="lunes">Lunes</label>
+        <input 
+            type="checkbox" 
+            name="dia[]" 
+            id="lunes" 
+            value="lunes"
+            checked
+        >
+
+        <label for="martes">Martes</label>
+        <input 
+            type="checkbox" 
+            name="dia[]" 
+            id="martes" 
+            value="martes"
+            disabled
+        >
+
+        <label for="miercoles">Miercoles</label>
+        <input 
+            type="checkbox" 
+            name="dia[]" 
+            id="miercoles" 
+            value="miercoles"
+            checked
+        >
+
+        <label for="jueves">Jueves</label>
+        <input 
+            type="checkbox" 
+            name="dia[]" 
+            id="jueves" 
+            value="jueves"
+            disabled
+        >
+
+        <label for="viernes">Viernes</label>
+        <input 
+            type="checkbox" 
+            name="dia[]" 
+            id="viernes" 
+            value="viernes"
+            checked
+        >
+        
+        <br>
+        <!--FILE-->
+        <br>
+        <label for="foto">Carge su foto de perfil</label>" 
+        <br>
+        <input 
+            type="file" 
+            name="foto" 
+            id="foto"
+            accept=".png"
+        >
+        <br>
+        <!--Color-->
+        <label for="color">Color Favorito</label>
+        <input 
+            type="color" 
+            name="color" 
+            id="color"
+            value=""
+        >
+        <br>
+        <!--RANGE-->
+        <label for="estatura">ESTATURA</label>
+        <input 
+            type="range" 
+            name="estatura" 
+            id="estatura"
+            value="10"
+            max="50"
+        >
+
+        <!--Password-->
+        <label for="contrasenia">Ingrese Contraseña</label>
+        <input type="password" name="contrasenia" id="contrasenia">
+        <!--Search-->
+        <label for="cedula">Buscar por cedula</label>
+        <input 
+            type="search" 
+            name="cedula" 
+            id="cedula"
+        >
+        <br><br><br>
+        <!--Reset-->
+        <input 
+            type="reset" 
+            name="limpiar" 
+            id="limpiar"
+            value="Limpiar"
+        >
+
+        <!--SUbMIT-->
+        <input 
+            type="submit" 
+            name="enviar" 
+            id="enviar" 
+            value="Enviar Formulario"
+            >
+
+        </form>
+
+        
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
