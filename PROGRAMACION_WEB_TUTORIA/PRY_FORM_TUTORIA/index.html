@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORNULARIO TUTORIA</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO TUTORIA</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <input type="hidden" name="numero_tarjeta" value="2432435" >
+            <input 
+                type="text" 
+                name="nombres" 
+                id="nombres" 
+                placeholder="Ingrese sus nombres completos" 
+                required
+                pattern="[A-Za-z ]+"
+                value="Dennis Paucar"
+            >
+
+            <label for="edad">Ingrese su edad desde 18 a 60 años</label>
+            <input 
+                type="number" 
+                name="edad" 
+                required
+                min="10"
+                max="60"
+                value="45"
+            >
+
+            <br>
+
+            <label for="clave">Ingrese su contraseña: </label>
+
+            <input 
+                type="password" 
+                name="clave" 
+                id="clave" 
+                placeholder="Ingrese su contraseña"
+                required
+                pattern ="([A-Z]{2})([a-z]{2})([0-9]{4})([A-Z]{1})([a-z]{1})([0-9]{1})"
+                
+            >
+
+            <br>
+
+            <button type="submit">Enviar Datos</button>
+        </form>
+    </main>
+    <footer>
+        <p>
+            c 2025
+        </p>
+    </footer>
+</body>
+</html>

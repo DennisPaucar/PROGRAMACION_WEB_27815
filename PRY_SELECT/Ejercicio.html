@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario para registrar pedido de una compra</h1>
+    </header>
+    <main>
+        <form action="server2.html" method="get">
+            <label for="cedula">Ingrese su cédula *</label>
+            <input type="text" name="cedula" id="cedula" placeholder="Ejm: 1754925483" autofocus minlength="10" maxlength="10" required value="1729000933">
+                        
+            <br>
+
+            <label for="id_venta">Ingrese el de venta: </label>
+            <input type="text" name="id_venta" id="id_venta" placeholder="Ejem FACTUR-2025-10-27-pm" required pattern="[A-Z]{6}-[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z]{2}">
+            
+            <br>
+
+            <label for="dispositivos">Selecciona hasta productos:</label>
+            <select id="dispositivos" name="frutas" multiple size="8">
+                <option value="laptop" selected>Laptop</option>
+                <option value="SmarWatch" selected>SmartWatch</option>
+                <option value="tv">TV</option>
+                <option value="smartv" selected>Smartv</option>
+                <option value="TABLET" selected>Tablet</option>
+                <option value="lapiz" selected>lapiz</option>
+                <option value="borrador" >borrador</option>
+                <option value="sacapuntas">sacapuntas</option>
+            </select>
+
+           
+            <br>
+
+            <label for="archivo">Suba la evidencia:</label>
+            <input type="file" name="archivo" id="archivo" accept=".pdf" required>
+            
+            <br>
+            <button type="submit">Enviar al servidor</button>
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

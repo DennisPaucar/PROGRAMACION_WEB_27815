@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        SELECT EN FORMULARIO   
+    </title>
+</head>
+<body>
+    <header>
+        <h1>SELECT EN FORMULARIOS</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <label for="id">Ingrese su id. Ejem LID343</label>
+            <input type="text" name="id" id="id" placeholder="Ingrese su id" pattern="[a-z]{3}[0-9]{4}" required>
+
+
+             <!--SELECT EN FORM-->
+             <label for="lista_frutas">Lista de frutas:</label>
+
+             <input type="hidden" name="cedula_usuario" value="13424224">
+
+             <select name="lista_frutas" id="lista_frutas" required autofocus>
+                <option value=""></option>
+                <option value="naranja">Naranja</option>
+                <option value="uva" selected>Uva</option>    
+                <option value="zapato" disabled>Zapatos</option>
+                <option value="pera">Pera</option>
+             </select>
+
+             <br>
+
+             <label for="musica_favoritas">Seleccione sus musicas favoritas</label>
+             <select name="mis_musica_favoritas[]" id="musica_favoritas" multiple size="5">
+                <option value="" disabled></option>
+
+                <optgroup title="Música de Shakira" label="Msuica de Shakira">
+                    <option value="loba_shakira" selected>Loba de shakira</option>
+                    <option value="anoche" disabled>anoche bad bunny</option>
+                    <option value="aventura" selected>infieles aventura</option>
+                </optgroup>
+                
+                <optgroup title="Música de Bad Bunny" label="Msuica de Bad Bunny">
+                    <option value="loba_shakira" selected>Loba de shakira</option>
+                    <option value="anoche" disabled>anoche bad bunny</option>
+                    <option value="aventura" selected>infieles aventura</option>
+                    
+                </optgroup>
+                
+                <optgroup title="Música de aventura" label="Msuica de aventura">
+                    <option value="loba_shakira" selected>Loba de shakira</option>
+                    <option value="anoche" disabled>anoche bad bunny</option>
+                    <option value="aventura" selected>infieles aventura</option>
+                </optgroup>
+                
+
+             </select>
+
+             <br>
+
+             <!--TextArea-->
+             <label for="descripcion">Ingrese su descripcion</label>
+             <textarea name="descripcion" required id="descripcion" rows="5" cols="50" disabled>Hola Mundo</textarea>
+            <button type="submit">Enviar al servidor</button>
+        </form>
+    </main>
+    <footer>
+        <p>
+            c 2025
+        </p>
+    </footer>
+
+</body>
+</html>

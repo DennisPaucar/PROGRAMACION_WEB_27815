@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTURACION</title>
+</head>
+<body>
+    <header>
+        <h1>SISTEMA DE FACTURACION</h1>
+        <form action="form_producto.html" method="get">
+            <table border="1" width="50%">
+                <tr>
+                    <th colspan="4">DATOS DEL CLIENTE</th>
+                </tr>
+                <tr>/
+                    <th colspan="4">
+                        <img src="https://www.pngarts.com/files/5/User-Avatar-PNG-Transparent-Image.png" alt="FACTURACION" width="150px">
+                    </th>
+                </tr>
+
+                <tr>
+                    <th colspan="4">
+                        Datos Personales
+                    </th>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        <label for="cedula">Ingrese su cédula *</label>
+                        <input type="text" name="cedula" id="cedula" placeholder="Ejm: 1729000933" autofocus minlength="10" maxlength="10" required value="1729000933">
+                        <br>
+                    </td>
+                    <td>
+                        <label>Sexo:</label>
+                        <br>
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" name="sexo" id="hombre" value="hombre" checked>
+                        <br>
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" name="sexo" id="mujer" value="mujer">
+                        <br>
+                    </td>
+                    <td>
+                        <label for="nombres">Ingrese sus Nombres: *</label>
+                        <input type="text" name="nombres" id="nombres" placeholder="Ejm:José Villa" required value="José Villa"><br>
+                    </td>
+                    <td>
+                        <label for="foto">Seleccione su foto de perfil:</label>
+                        <input type="file" name="foto" id="foto" accept=".jpg,.jpeg,.png">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="telefono">Ingrese su teléfono:</label>
+                        <input type="text" name="telefono" id="telefono" placeholder="Ejm: 0991234567" maxlength="10" required value="0998729445">
+                        <br>
+                    </td>
+                    <td>
+                        <label for="email">Ingrese su e-mai:</label>
+                        <input type="email" name="email" id="email" placeholder="Ejm: ejemplo@correo.com" required value="jdvilla3@espe.edu.ec">
+                        <br>
+                    </td>
+                    <td>
+                        <label for="direccion">Ingrese su dirección: *</label>
+                        <input type="text" name="direccion" id="direccion" placeholder="Ejm: Av. Siempre Viva 742" required value="Av. Siempre Viva 742">
+                        <br>
+                    </td>
+                    <td>
+                        <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                        <br>
+                        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" max="2025-10-24" required value="2006-01-01">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="4"> Datos del Domicilio</th>
+                </tr>
+
+                
+
+                <tr>
+
+                    <td colspan="3" rowspan="3">
+                        <label for="direccion">Ingrese Cantón</label>
+                        <input 
+                            type="text" 
+                            name="direccion" 
+                            id="direccion" 
+                            placeholder="Ejem: Av. Los Rosales 123" 
+                            required
+                            value="Av. 10 de Agosto"
+                        >
+                        <br>
+                        <br>
+                        <label for="postal">Código postal:</label>
+                        <input type="number" name="postal" id="postal" placeholder="Ejem: 170513" autofocus minlength="10" maxlength="10" required value="170513">
+
+                        <br>
+                        <br>
+                        <label for="provincia">Provincia:</label>
+                        <input type="text" name="provincia" id="provincia" placeholder="Ejem: Pichincha" required value="Pichincha">
+                        
+                    </td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/837px-Google_Maps_icon_%282020%29.svg.png" alt="NO hay imagen" width="100px">
+                    </td>
+                </tr>
+
+                <tr>
+                    
+                </tr>
+
+                <tfoot>
+                    <td colspan="4">
+                        Los campos con * son obligatorios
+                    </td>
+                </tfoot>
+            </table>
+
+            <!--SUBMIT-->
+            <input type="submit" name="enviarcliente" id="enviarcliente" value="Enviar Datos">
+
+        </form>
+
+    </header>
+</body>
+</html>
