@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PAGINA</title>
+
+    <style>
+        /*Selector universal*/
+        *{
+            padding: 0px;
+            
+        }
+        
+
+        /*Selector por elemento*/
+
+        h1{
+            color: blueviolet;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        p{
+            color: orange;
+        }
+
+        /*elemento por etiquetas */
+        button{
+            background-color: skyblue;
+        }
+
+        /*propiedad class de nuestras etiquetas */
+        .boton-personalizado{
+            background-color: lightseagreen;
+            width: 100%;
+            border: none;
+            color: white;
+            font-weight: bold;
+            text-align: left;
+            padding: 5px;
+            margin: 2px;
+        }
+
+        .text-derecho{
+            text-align: right;
+        }
+        
+        .text-center{
+            text-align: center;
+        }
+
+        #boton-unico{ 
+            background-color: rgb(214, 233, 106, 0.2);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        HOLA MUNDO
+    </h1>
+
+    <h1>
+        2025
+    </h1>
+    <p>
+        Welcome to Programacion web
+    </p>
+
+    <p>
+        Parrafo dos
+    </p>
+
+    <hr>
+    <br>
+
+    <button>BOTON SIN CLASE</button><button>BOTON SIN CLASE</button><button>BOTON SIN CLASE</button><button>BOTON SIN CLASE</button><button>BOTON SIN CLASE</button>
+    
+   
+    <hr>
+
+    <br>
+    <button class="boton-personalizado text-derecho">BOTON CON CLASE</button><button class="boton-personalizado text-center">BOTON CON CLASE</button><button class="boton-personalizado">BOTON CON CLASE</button><button class="boton-personalizado">BOTON CON CLASE</button><button class="boton-personalizado">BOTON CON CLASE</button>
+
+    <hr>
+    <br>
+    <button id="boton-unico">SALIR</button>
+</body>
+</html>

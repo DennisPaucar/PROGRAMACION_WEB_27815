@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA</title>
+    
+    <link rel="stylesheet" href="../public/CSS/externo.css">
+    
+    </head>
+<body>
+
+    <h2>1. Input de Texto</h2>
+    <input type="text" placeholder="Ingrese su nombre" class="input-estilo">
+    
+    <hr>
+
+    <h2>2. Select (Lista Desplegable)</h2>
+    <label for="lista">Lista de frutas</label>
+    <select name="lista" id="lista" class="select-estilo">
+        <option value="uva">Uva</option>
+        <option value="manzana">Manzana</option>
+        <option value="pera">Pera</option>  
+        <option value="naranja">Naranja</option>
+    </select>
+
+    <hr>
+
+    <h2>3. Textarea (Área de Comentarios)</h2>
+    <label for="comentarios">Comentarios:</label>
+    <textarea name="comentarios" id="comentarios" class="textarea-estilo"></textarea>
+
+    <hr>
+
+    <h2>4. Radio Buttons (Opción y Estilo)</h2>
+    <label style="margin-right: 10px;">Seleccione su género:</label>
+
+    <label class="radio-opcion opcion-masculino">
+        <input type="radio" name="genero" value="masculino"> Masculino
+    </label>
+
+    <label class="radio-opcion opcion-femenino">
+        <input type="radio" name="genero" value="femenino"> Femenino
+    </label>
+
+    <hr>
+
+    <h2>5. Checkbox (Términos)</h2>
+    
+    <label class="checkbox-contenedor">
+        <input type="checkbox" name="aceptar" value="si">
+        Aceptar términos y condiciones
+    </label>
+    
+    <div class="checkbox-layout-ejemplo">
+      <label for="terminos">✅ Aceptar layout complejo:</label>
+      <input type="checkbox" id="terminos" name="terminos">
+        Acepto los términos y condiciones
+    </div>
+
+</body>
+</html>
