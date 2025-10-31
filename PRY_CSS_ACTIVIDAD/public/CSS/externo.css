@@ -84,8 +84,7 @@
 .opcion-masculino { background-color: #007bff; }
 .opcion-femenino { background-color: #e83e8c; }
 
-
-/* --- Estilos para Checkbox --- */
+    
 
 .checkbox-contenedor {
     display: inline-flex;
