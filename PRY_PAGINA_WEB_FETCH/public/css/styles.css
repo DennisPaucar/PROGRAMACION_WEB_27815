@@ -1,0 +1,34 @@
+
+.menu-title {
+    font-size: 2.5rem;
+    color: #4B2C20; 
+}
+
+.coffee-card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.coffee-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-custom {
+    height: 250px;
+}
+
+.coffee-title {
+    color: #A0522D; 
+    font-weight: 700;
+}
+
+
+
+#menu-principal {
+    background-color: #E6D8C4; 
+}
+
+#reservas-menu {
+    background-color: #E6D8C4; 
+}

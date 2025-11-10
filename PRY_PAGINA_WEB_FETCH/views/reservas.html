@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+<body>
+    
+    <head>
+
+    </head>
+
+    <body>
+        
+        <main>
+            <img 
+                src="../public/img/bannerReservas.png" 
+                class="img-fluid w-100" 
+                alt="Imagen no encontrada"
+                
+            >
+            <section id="reservas-menu" class="py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <h1 class="text-center mb-3 menu-title">Reserva tu Mesa</h1>
+                            <p class="text-center lead text-muted mb-5">
+                                Utiliza este formulario para asegurar tu lugar o enviarnos cualquier consulta.
+                            </p>
+
+                            <form id="reservaForm" action="#" method="GET" class="p-4 p-md-5 border rounded-3 bg-light shadow-lg">
+                                
+                                <h4 class="mb-4 coffee-title">Detalles de la Reserva</h4>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="inputName" class="form-label">Nombre Completo <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="inputName" placeholder="Tu nombre" required maxlength="100">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail" class="form-label">Correo Electrónico <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@correo.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="inputGuests" class="form-label">Número de Personas <span class="text-danger">*</span></label>
+                                        <input type="number" class="form-control" id="inputGuests" placeholder="Mínimo 1" required min="1" max="10">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword" class="form-label">Contraseña de Confirmación</label>
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Solo letras y números" pattern="[A-Za-z0-9]+" title="Solo se permiten letras y números (pattern)" maxlength="20">
+                                        <div class="form-text">Usada para la validación de tu cuenta de cliente.</div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <label for="inputDate" class="form-label">Fecha <span class="text-danger">*</span></label>
+                                        <input type="date" class="form-control" id="inputDate" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputTime" class="form-label">Hora Preferida <span class="text-danger">*</span></label>
+                                        <input type="time" class="form-control" id="inputTime" required min="08:00" max="20:00">
+                                        <div class="form-text">Horario de 08:00 a 20:00.</div>
+                                    </div>
+                                </div>
+
+                                <h4 class="mb-3 coffee-title">Opciones Adicionales</h4>
+
+                                <div class="mb-4">
+                                    <label for="selectTable" class="form-label">Ubicación de Mesa Preferida</label>
+                                    <select id="selectTable" class="form-select">
+                                        <option value="interior" selected>Interior Tranquila</option>
+                                        <option value="terraza">Terraza</option>
+                                        <option value="junto-ventana">Balcón</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="inputComments" class="form-label">Comentarios o Peticiones Especiales</label>
+                                    <textarea class="form-control" id="inputComments" rows="3" placeholder="Añade si tienes alergias o peticiones de accesibilidad..."></textarea>
+                                </div>
+                                
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-dark btn-lg">
+                                        Confirmar Reserva
+                                    </button>
+                                </div>
+                                
+                            </form>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <script src="../js/menu_loader.js"></script>
+        </main>
+    </body>
+</body>
+</html>
