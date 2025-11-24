@@ -1,0 +1,70 @@
+body{
+    background-color: lightcyan;
+}
+
+.caja-static{
+    position: static;
+    background-color: wheat;
+    margin: 2px;
+    border: 1px solid;
+    padding: 2px;
+    /*No afecta propiedades de mover*/
+    left: 50px;
+    top: 50px;
+}
+
+.caja-relative{
+    position: relative;
+    background-color: lightgreen;
+    margin: 2px;        
+    border: 2px solid;
+    padding: 2px;
+    /*Afecta propiedades de mover*/
+    left: 50px;
+    top: 50px;
+    bottom: 10px;
+    right: 20px;
+}
+
+.padre{
+    position: relative;
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+}
+
+.caja-absolute{
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    background-color: red;
+}
+
+.caja-fixed{
+    position:fixed;
+    background-color: green;
+    bottom: 5px;
+    right: 5px;
+}
+
+.Customize-buttom{
+    position: fixed;
+    color: white;
+    font-size: 18px;
+    bottom: 5px;
+    right: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #004a77;
+    box-shadow: 3px 3px black;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+
+.Customize-buttom:hover {
+  background-color: #1b72a8; 
+}
