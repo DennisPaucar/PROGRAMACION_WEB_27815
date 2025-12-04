@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Basicas</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="display-2 text-center fw-bold">Operaciones Básicas</h1>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Suma</h1>
+                    <div class="form-floating mb-3">
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="formId1"
+                            id="txt_numero_uno"
+                            placeholder="0.00"
+                        />
+                        <label for="txt_numero_uno">Ingrese número 1:</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="formId1"
+                            id="txt_numero_dos"
+                            placeholder="0.00"
+                        />
+                        <label for="txt_numero_dos">Ingrese número 2:</label>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button
+                            type="button"
+                            id="btn_conversion_m"
+                            class="btn btn-primary"
+                        >
+                            Sumar
+                        </button>
+                    </div>
+                    
+                    
+                    <h1 id="txt_resultado" class="">0.00</h1>
+                </div>
+                
+
+                <div class="col-sm-6">
+                    <h1>Resta</h1>
+                    <div class="form-floating mb-3">
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="formId1"
+                            id="txt_numero_uno_resta"
+                            placeholder="0.00"
+                        />
+                        <label for="txt_numero_uno_resta">Ingrese número 1:</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="formId1"
+                            id="txt_numero_dos_resta"
+                            placeholder="0.00"
+                        />
+                        <label for="txt_numero_dos_resta">Ingrese número 2:</label>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button
+                            type="button"
+                            id="btn_restar"
+                            class="btn btn-primary"
+                        >
+                            Restar
+                        </button>
+                    </div>
+                    
+                    
+                    <h1 id="txt_resultado_resta" class="">0.00</h1>
+                </div>
+
+                <div class="col-sm-6">
+                    <h1>Multiplicación</h1>
+                    <div class="form-floating mb-3">
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="formId1"
+                            id="txt_numero_uno_multi"
+                            placeholder="0.00"
+                        />
+                        <label for="txt_numero_uno_multi">Ingrese número 1:</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="formId1"
+                            id="txt_numero_dos_multi"
+                            placeholder="0.00"
+                        />
+                        <label for="txt_numero_dos_multi">Ingrese número 2:</label>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button
+                            type="button"
+                            id="btn_multiplicar"
+                            class="btn btn-primary"
+                        >
+                            Multiplicar
+                        </button>
+                    </div>
+                    
+                    
+                    <h1 id="txt_resultado_multi" class="">0.00</h1>
+                </div>
+                
+                <div class="col-sm-6">
+
+
+
+                    <h1>División</h1>
+                    <div class="form-floating mb-3">
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="formId1"
+                            id="txt_numero_uno_div"
+                            placeholder="0.00"
+                        />
+                        <label for="txt_numero_uno_div">Ingrese número 1:</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="formId1"
+                            id="txt_numero_dos_div"
+                            placeholder="0.00"
+                        />
+                        <label for="txt_numero_dos_div">Ingrese número 2:</label>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button
+                            type="button"
+                            id="btn_dividir"
+                            class="btn btn-primary"
+                        >
+                            Dividir
+                        </button>
+                    </div>
+                    
+                    
+                    <h1 id="txt_resultado_div" class="">0.00</h1>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        &copy; 2025 Espe
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/operaciones_basicas.js"></script>
+    <script src="./public/js/multiplicar.js"></script>
+    <script src="./public/js/division.js"></script>
+    <script src="./public/js/resta.js"></script>
+    
+</body>
+</html>
