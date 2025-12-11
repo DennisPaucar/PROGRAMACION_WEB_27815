@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                    <h1>Conversión de km a m</h1>
+                    <div class="col-sm-6 form-floating mb-3">
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="formId1"
+                            id="txt_numero_uno_km"
+                            placeholder="0.00"
+                        />
+                        <label for="txt_numero_uno_km">Ingrese la cantidad en Km</label>
+                    </div>
+
+                    <div class="col-sm-6 form-floating mb-3">
+                        <h1 id="txt_resultado_m" class="">0.00 <h1>m</h1></h1>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button
+                            type="button"
+                            id="btn_conversion_m"
+                            class="btn btn-primary"
+                        >
+                            Convertir
+                        </button>
+                    </div>
+                    
+                    
+                   
+                </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+     <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                    <h1>Conversión de m a km</h1>
+                    <div class="col-sm-6 form-floating mb-3">
+                        <input
+                            type="number"
+                            class="form-control"
+                            name="formId1"
+                            id="txt_numero_uno_m"
+                            placeholder="0.00"
+                        />
+                        <label for="txt_numero_uno_m">Ingrese la cantidad en m</label>
+                    </div>
+
+                    <div class="col-sm-6 form-floating mb-3">
+                        <h1 id="txt_resultado_km" class="">0.00 <h1>km</h1></h1>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button
+                            type="button"
+                            id="btn_conversion_km"
+                            class="btn btn-primary"
+                        >
+                            Convertir
+                        </button>
+                    </div>
+                    
+                    
+                   
+                </div>
+        </div>
+
+    </div>
+
+
+    <script src="./public/js/conversion_km_m.js"></script>
+    <script src="./public/js/conversion_m_km.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
