@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar numeros del 1 al 10</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mostrar numeros del 1 al 10</h1>
+
+
+        <div class="mb-3">
+            <label for="txt_numero_inicial" class="form-label">Ingrese el numero inicial</label>
+            <input
+                type="number"
+                class="form-control"
+                name=""
+                id="txt_numero_inicial"
+                aria-describedby="helpId"
+                placeholder="1"
+                autofocus
+            />
+            <small id="helpId" class="form-text text-muted">Ejemplo 1</small>
+        </div>
+        
+
+        <div class="mb-3">
+            <label for="txt_numero_final" class="form-label">Ingrese numero final</label>
+            <input
+                type="number"
+                class="form-control"
+                name=""
+                id="txt_numero_final"
+                aria-describedby="helpId"
+                placeholder="10"
+                autofocus
+            />
+            <small id="helpId" class="form-text text-muted">Ejemplo 10</small>
+        </div>
+        
+        <div class="d-grid gap-2">
+            <button
+                type="button"
+                name=""
+                id="btn_mostrar_numeros"
+                class="btn btn-primary"
+            >
+                Mostrar numeros
+            </button>
+        </div>
+        
+        <hr>
+
+        <p>Resultado:</p>
+
+        <div class="row">
+            <div class="col-md-4" id="txt_mostrar_resultado">
+
+            </div>
+            <div class="col-md-4" id="txt_mostrar_tabla">
+
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/mostrarNumeros.js"></script>
+</body>
+</html>

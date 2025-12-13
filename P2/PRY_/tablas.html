@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas </title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <h1 class="text-center"> Tablas de Multiplicar</h1>
+    <div class="container">
+        <br>
+        <div class="form-floating mb-3">
+            <input
+                type="text"
+                class="form-control"
+                name="formId1"
+                id="txt_numero_tabla"
+                placeholder="0"
+                autofocus
+            />
+            <label for="formId1">Ingrese numero de tabla</label>
+        </div>
+        <div class="d-grid gap-2">
+            <button
+                type="button"
+                name=""
+                id="btn_mostrar_tabla"
+                class="btn btn-primary"
+            >   
+                Mostrar tabla
+            </button>
+        </div>
+
+        <div class="d-grid gap-2 mt-2">
+            <button
+                type="button"
+                name=""
+                id="btn_limpiar"
+                class="btn btn-danger"
+            >
+                Limpiar
+            </button>
+        </div>
+        
+        <hr>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Resultado:</h4>
+                        <ul id="txt_mostrar_resultado"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="./public/js/tabla.js"></script>
+     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

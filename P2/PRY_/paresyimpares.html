@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números pares e impares</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <h1 class="text-center">Numeros pares e impares</h1>
+    <div class="container">
+        <br>
+        <div class="mb-3">
+            <label for="txt_numero_inicial" class="form-label">Ingrese # 1</label>
+            <input
+                type="text"
+                class="form-control"
+                name=""
+                id="txt_numero_inicial"
+                aria-describedby="helpId"
+                placeholder="1"
+                autofocus
+            />
+            <small id="helpId" class="form-text text-muted">Ingrese un numero inicial</small>
+            <br>
+                 
+            <label for="txt_numero_final" class="form-label">Ingrese # 2</label>
+            <input
+                type="text"
+                class="form-control"
+                name=""
+                id="txt_numero_final"
+                aria-describedby="helpId"
+                placeholder="2"
+                autofocus
+            />
+            <small id="helpId" class="form-text text-muted">Ingrese un numero inicial</small>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button
+                type="button"
+                name=""
+                id="btn_calcular"
+                class="btn btn-primary"
+            >
+                Calcular numeros pares e impares
+            </button>
+        </div>
+
+        <div class="d-grid gap-2 mt-2">
+            <button
+                type="button"
+                name=""
+                id="btn_limpiar"
+                class="btn btn-danger"
+            >
+                Limpiar
+            </button>
+        </div>
+        
+        <hr>
+
+
+        <hr>
+
+        <p>Resultado:</p>
+
+
+        <div class="row">
+            <div class="col-md-6" id="txt_mostrar_resultado_pares">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Números pares</h4>
+                        <ul id="lista_pares"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" id="txt_mostrar_resultado_impares">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Números impares</h4>
+                        <ul id="lista_impares"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+    </div>
+    <script src="./public/js/pareseimpares.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
