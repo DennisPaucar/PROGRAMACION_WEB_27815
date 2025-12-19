@@ -67,3 +67,53 @@
 
 </body>
 </html>
+
+[span_4](start_span)// 1. Arreglo de tareas con 3 objetos iniciales[span_4](end_span)
+const tareas = [
+    { titulo: "Estudiar JS", estado: true },
+    { titulo: "Hacer deber", estado: false },
+    { titulo: "Leer", estado: true }
+];
+
+[span_5](start_span)// 3. Función para mostrar tareas en la tabla[span_5](end_span)
+function mostrarTareas() {
+    const tabla = document.getElementById("tablaTareas");
+    tabla.innerHTML = ""; // Limpiar tabla antes de cargar
+
+    tareas.forEach(tarea => {
+        const fila = document.createElement("tr");
+        
+        [span_6](start_span)// Determinar texto del estado[span_6](end_span)
+        const estadoTexto = tarea.estado ? "Completada" : "Pendiente";
+        const claseBadge = tarea.estado ? "bg-success" : "bg-warning text-dark";
+
+        fila.innerHTML = `
+            <td>${tarea.titulo}</td>
+            <td><span class="badge ${claseBadge}">${estadoTexto}</span></td>
+        `;
+        tabla.appendChild(fila);
+    });
+}
+
+// 4a. [span_7](start_span)Función para contar pendientes[span_7](end_span)
+function contarPendientes() {
+    return tareas.filter(t => t.estado === false).length;
+}
+
+// 4b. [span_8](start_span)Función para contar completadas[span_8](end_span)
+function contarCompletadas() {
+    return tareas.filter(t => t.estado === true).length;
+}
+
+[span_9](start_span)[span_10](start_span)// Función auxiliar para el botón (Punto 5)[span_9](end_span)[span_10](end_span)
+function ejecutarConteo() {
+    const completadas = contarCompletadas();
+    const pendientes = contarPendientes();
+    
+    const visor = document.getElementById("resultadoConteo");
+    visor.innerHTML = `Tareas completadas: ${completadas}, Tareas pendientes: ${pendientes}`;
+}
+
+[span_11](start_span)// 7. Mostrar la información al cargar la página[span_11](end_span)
+window.onload = mostrarTareas;
+
