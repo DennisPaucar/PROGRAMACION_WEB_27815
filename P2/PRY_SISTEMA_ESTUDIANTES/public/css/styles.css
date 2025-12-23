@@ -1,0 +1,29 @@
+body{
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+
+}
+
+
+.container-main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card{
+    border:none;
+    border-radius:  15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.badge-custom{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.estado-aprobado{
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.estado-riesgo{
+    background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+}
