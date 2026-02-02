@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Estudiantes</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+
+</head>
+<body>
+
+    <div class="container container-main">
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card text-center mt-5">
+                    <div class="card-body py-4">
+                        <h1 class="display-4 mb-3"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                                <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1z"/>
+                            </svg>
+                            Sistema de Evaluación de estudiantes
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <hr>
+
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <div class="card text-white bg-success">
+                    <div class="card-header text-center">
+                        <h5 class="mb-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                            </svg>
+                            Estudiantes Aprobados
+                        </h5>
+                    </div>
+
+                    <div class="card-body text-center">
+                        <span id="total_aprobados" class="badge bg-light text-success badge-custom">0</span>
+                        <p class="mt-3 mb-0">Estudiantes con nota 7-10</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-white bg-warning">
+                    <div class="card-header text-center">
+                        <h5 class="mb-0">Supletorios</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <span id="total_supletorios" class="badge bg-light text-warning badge-custom">0</span>
+                        <p class="mt-3 mb-0">Estudiantes con nota 5-6</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-white bg-danger">
+                    <div class="card-header text-center">
+                        <h5 class="mb-0">Estudiantes Reprobados</h4>
+                    </div>
+                    <div class="card-body text-center">
+                        <span id="total_reprobados" class="badge bg-light text-danger badge-custom ">0</span>
+                        <p class="mt-3 mb-0">Estudiantes con nota 0-4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white text-center">
+                            <h5 class="mb-0">Promedio del Curso</h5>
+                        </div>
+                        <div class="card-body text-center py-5">
+                            <h1 class="text-primary" id="promedio_curso">0</h1>
+                            <p class="text-muted">Promedio total del curso</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card" id="estado_curso_card">
+                        <div class="card-header text-white text-white" id="estado_curso_header">
+                            <h5 class="mb-0">Estado del curso</h5>
+                        </div>
+
+                        <div class="card-body text-center py-5">
+                            <h2 class="display-4" id="estado_curso">-</h2>
+                            <p class="mt-2 mb-0" id="estado_curso_descripcion">Procesando</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            
+
+            <div class="d-grid gap-2 mt-5">
+                <button
+                    type="button"
+                    name=""
+                    id="btn_cargar_datos"
+                    class="btn btn-primary"
+                >
+                    Cargar Datos
+                </button>
+            </div>
+
+            <div class="d-grid gap-2 mt-3">
+                <button
+                    type="button"
+                    name=""
+                    id="btn_limpiar_datos"
+                    class="btn btn-danger"
+                >
+                    Limpiar
+                </button>
+            </div>
+            
+
+            
+    </div>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>

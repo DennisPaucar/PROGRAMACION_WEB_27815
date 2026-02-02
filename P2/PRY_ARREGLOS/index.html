@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos en JS</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white text-center">
+
+    <div class="container">
+        <h1>Listado de compras</h1>
+        <hr>
+
+        <div class="form-floating mb-3">
+            <input
+                type="text"
+                class="form-control"
+                name="formId1"
+                id="txt_producto"
+                placeholder="Ejm: Arroz"
+                autofocus
+            />
+            <label for="txt_producto">Ingrese Producto: </label>
+        </div>
+        
+        <div class="d-grid gap-2">
+            <button
+                type="button"
+                name=""
+                id="btn_agregar"
+                class="btn btn-primary"
+            >
+                Agregar
+            </button>
+        </div>
+        
+      
+        <!-- Some borders are removed -->
+        <ul class="list-group list-group-flush pt-2" id="lista_productos">
+            <li class="list-group-item">Arroz</li>
+            
+        </ul>
+
+        <ul class="list-group list-group-flush pt-2" id="lista_productos_Mayus">
+            <li class="list-group-item">Arroz</li>
+            
+        </ul>
+
+    
+        
+    </div>
+
+    
+    
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="./public/js/arreglos.js"></script> -->
+    <script src="./public/js/compras.js"></script>
+
+
+    
+</body>
+</html>
